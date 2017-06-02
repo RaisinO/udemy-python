@@ -1,0 +1,45 @@
+date and time
+
+import datetime
+datetime.datetime.now()
+class is datetime.datetime
+
+yesterday = datetime.datetime(2016,5,13,11,0,0,0)
+now = datetime.datetime.now()
+delta = now - yesterday
+#time delta
+delta
+delta.days
+delta.total_seconds()
+
+ex
+import datetime
+
+r"""
+This script creates an empty file.
+"""
+
+filename = datetime.datetime.now()
+
+#Create empty file
+def create_file():
+  """This function creates an empty file"""
+  with open(str(filename.strftime("%Y-%m-%d-%H-%M")+".txt","w") as file:
+    file.write("") #Writing an empty string
+
+#now.strftime("%Y-%m-%d-%H-%M-%S-%f") #formatting in strftime.org
+#now.strftime("%B %Y %d") #month year day
+
+create_file()
+
+#add days
+after = now+datetime.timedelta(days=2) #seconds and hours also work
+
+#time
+import time
+lst[]
+for i in range (5):
+  lst.append(datetime.datetime.now())
+  time.sleep(1) #in seconds
+for i in lst:
+  print(i) #accuracy to 0.000060 seconds
